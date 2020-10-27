@@ -17,12 +17,9 @@
 // # Source code: https://github.com/Shadowss/TravianZ ##
 // # ##
 // ################################################################################
-# include_once("../GameEngine/Artifacts.php");
-# include_once("../GameEngine/Units.php");
-# include_once("../GameEngine/Generator.php");
-include_once("../Artifacts.php");
-include_once("../Units.php");
-include_once("../Generator.php");
+include_once("../GameEngine/Artifacts.php");
+include_once("../GameEngine/Units.php");
+include_once("../GameEngine/Generator.php");
 
 class funct
 {
@@ -418,3 +415,4 @@ if ($funct->CheckLogin()) {
 if (isset($_POST['action']) && $_POST['action'] == 'login') {
     $funct->LogIN($_POST['name'], $_POST['pw']);
 }
+?>
