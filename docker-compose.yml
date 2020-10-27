@@ -10,8 +10,10 @@ services:
       MYSQL_PASSWORD: "mjatjptm"
     ports:
       - "9906:3306"
+    volumes:
+      - "~/TravianZ/db_table:/var/lib/mysql"
   web:
-    image: "travian-palmeiras"
+    image: "travian-palmeiras:1.0"
     container_name: "travian-palmeiras"
     depends_on:
       - db
