@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  db:
+    image: "mysql:5.7"
+    environment:
+      MYSQL_ROOT_PASSWORD: "mjatjptm"
+      MYSQL_DATABASE: "travian"
+      MYSQL_USER: "morales"
+      MYSQL_PASSWORD: "mjatjptm"
+    ports:
+      - "9906:3306"
+  web:
+    image: "travian-palmeiras"
+    container_name: "travian-palmeiras"
+    depends_on:
+      - db
+    volumes:
+      - "~/TravianZ:/var/www/html"
+    ports:
+      "80:80"
+    stdin_open: "true"
+    tty: "true"
