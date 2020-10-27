@@ -18,6 +18,6 @@ services:
     volumes:
       - "~/TravianZ:/var/www/html"
     ports:
-      "80:80"
-    stdin_open: "true"
-    tty: "true"
+      - "80:80"
+    stdin_open: true
+    tty: true

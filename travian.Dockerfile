@@ -1,5 +1,8 @@
 FROM php:7.4-apache
 
+# install mysqli extension
+RUN docker-php-ext-install mysqli
+
 # copy game files
 COPY . /var/www/html
 
