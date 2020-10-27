@@ -1,6 +1,6 @@
 <?php
 use App\Utils\AccessLogger;
-define('PROJECT_ROOT_PATH', __DIR__);
+
 #################################################################################
 ##                                                                             ##
 ##              -= YOU MUST NOT REMOVE OR CHANGE THIS NOTICE =-                ##
